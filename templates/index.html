@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+    <title>Fake news detection || home page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="#developer">Developer</a></li>
+                    <li class="nav-item"><a href="/about">About</a></li>    
+                </ul>
+                <img src="{{ url_for('static', filename='images/AIlogo.jpeg') }}" alt="project_logo" class="logo">
+            </div>    
+        </nav>
+    </header>
+
+
+
+    <section class="showcase-area " id="showcase">
+       <div class="showcase-wrapper container">
+
+            <div class="showcase-image showcase-item">
+                <img src="{{ url_for('static', filename='images/AIimage.jpeg') }}" alt="" >
+            </div>
+
+            <div class="showcase-content showcase-item">
+                <h1 class="main-heading text-dark">Fake news detection</h1>   <h1 class="lg-heading">using Machine Learning & NLP</h1> 
+                          
+                <form action="/predict" method="post" class="showcase-form">
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <button class="button1" type="submit" >DETECT</button>
+                </form>
+                {% if prediction == [1]%}
+	                <h2 class="md-heading" style="color:red;">This is a Fake⚠️News 😠</h2>
+	            {% elif prediction == [0]%}
+				    <h2 class="md-heading" style="color:green;"><b>This is a Real News🙂</b></h2>
+	            {% endif %}
+            </div>
+       </div>
+       
+    </section>
+
+
+
+
+
+    <section class="trainer-section " id="">
+            <div class="trainer-title">
+                <h1 class="lg-heading text-light">LED BY</h1>
+            </div>
+            <div class="trainer-container">
+                 <div class="trainer-image">
+                     <img src="{{ url_for('static', filename='images/Chandan-verma.jpg') }}" alt="">
+                 </div>
+                 <div class="trainer-name">
+                     <h1 class="md-heading">Mr. Chandan verma</h1><br>
+                    <a href="https://www.linkedin.com/in/chandan-verma-aa448b5a/" style="color:#04669A"  target="blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a>&nbsp; &nbsp; 
+                    <a href="https://github.com/chandanverma07" style="color: #040204;" target="blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
+                 </div>
+            </div>
+    </section>
+
+
+
+
+    <section class="team-section " id="developer">
+
+        <div class="team-heading">
+            <h1 class="lg-heading">OUR TEAM</h1>
+        </div>
+
+        <div class="team-container container">
+
+            <div class="team-menber ">
+                <img src="{{ url_for('static', filename='images/shivpratap.png') }}" alt="">                 
+                 <h1 class="text-blue" style="font-size: 25px;">Shivpratap</h1>
+
+                 <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/shivpratap1999/" style="color:#04669A" target="blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a> 
+                    <a href="https://github.com/Shivpratap1999" style="color: #040204;" target="blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
+                 </div>
+                
+                 <div class="email">
+                    <p class="text-dark" style="font-size: 17px;">
+                        <b>Email:</b><br> shivpratap.hp.19@gmail.com
+                     </p>
+                 </div>
+                 
+            </div>
+
+
+            <div class="team-menber ">               
+                <img src="{{ url_for('static', filename='images/rohitshukla.png') }}" alt="">                
+                <h1 class="text-blue " style="font-size: 25px;">Rohit Shukla</h1>
+
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/rohitshukla001/" style="color:#04669A" target="blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a> 
+                    <a href="https://github.com/rohitshukla001" style="color: #040204;" target="blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
+                </div>
+
+                <div class="email">
+                    <p class="text-dark" style="font-size: 17px;">
+                        <b>Email:</b><br>rawstar1090@gmail.com
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <div class="team-menber ">                
+                <img src="{{ url_for('static', filename='images/sudheerkumar.png') }}" alt="">
+                <h1 class="text-blue " style="font-size: 23px;">Sudhir Kumar Gautam</h1>
+
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/sudheer-kumar-513b35222/" style="color:#04669A" target="blank"><i class="fa fa-linkedin" style="font-size: 25px;"></i></a> 
+                    <a href="https://github.com/sudheergautam007" style="color: #040204;" target="blank"><i class="fa fa-github" style="font-size: 25px;"></i></a>
+                </div>
+                
+                <div class="email">
+                    <p class="dark-dark" style="font-size: 17px;">
+                        <b >Email:</b><br>gautamsudheer483@gmail.com
+                    </p>
+                </div>
+                
+            </div> 
+           
+        </div>
+        <div class="team-reset">
+            <a href="#showcase" class="lg-heading"  >&#8682;</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer" id="">
+         <div class="footer-content">
+            <p class = "mini-heading text-light">© 2021 - All Rights Reserved.</p>
+         </div>
+    </footer>
+
+ 
+</body>
+</html>
