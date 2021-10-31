@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Fake news detection || About page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                
+                
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="/">Home</a></li>
+                    <li class="nav-item"><a href="/about">About</a></li>
+                    
+                    
+                </ul>
+                <img src="{{ url_for('static', filename='images/AIlogo.jpeg') }}" alt="project_logo" class="logo">
+            </div>    
+        </nav>
+
+    </header>
+    
+
+    <section class="about-section" id="showcase">
+        <div class="about-container">
+            <h1 class= "main-heading">About the Project</h1>
+            <p class="text-gray">This model can classify a piece of news as "<b>Fake</b>" or "<b>Real</b>". we used Python, Natural language processing (NLP) and Machine learning to make this model. The Model gives output based on the trained dataset. To detecting the news with this Reliable model is very easy.</p>
+            <h3 class="md-heading">How it works </h3>
+            <p class="text-gray"><b></b><b>STEP 1:&nbsp;</b>First copy text/news which you want to check weither it is&nbsp;"Fake" or "Real".<br><b>STEP 2:</b>&nbsp;Paste that code in our model<br><b>STEP 3:&nbsp;</b>click on "DETECT".&nbsp;<br>That's it. Outpur is your's.
+            <br><a class = "button2" href="/" class="">Go to model ➙</a>
+        </div>
+   
+                  
+    </section>
+
+    <footer class="footer" id="">
+        <div class="footer-content">
+           <p class = "mini-heading text-light">© 2021 - All Rights Reserved.</p>
+        </div>
+   </footer>
+
+ 
+</body>
+</html>

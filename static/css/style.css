@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+/*################ UTILITY CLASSES ############################# */
+.container{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+.text-dark{
+    color: black;
+}
+.text-light{
+    color: #fff;
+}
+.text-blue{
+    color: rgb(47, 116, 180);
+}
+.text-gray{
+    font-size: 20px;
+    font-weight: 500;
+}
+.main-heading{
+    font-weight:700;
+    font-size: 50px;   
+}
+.lg-heading{
+    font-weight:700;
+    font-size: 40px;
+}
+.md-heading{
+    font-weight: 600;
+    font-size:25px ;
+}
+.mini-heading{
+    font-size: 15px;
+    font-weight: 400;
+}
+.button1{
+    height:50px ;
+    width:40%;
+    background-color:rgb(36, 144, 216) ;
+    color:#FFF;
+    font-weight: 800;
+    font-size: 20px; 
+}
+.button2{
+    height:50px ;
+    width:150px;
+    background-color:rgb(216, 36, 66) ;
+    color:#FFF;
+    font-weight: 800;
+    font-size: 20px; 
+    padding: 7px;
+}
+
+.button1:hover{
+    box-shadow: 5px 5px 10px 0px rgb(33, 33, 53);
+    padding: 5px;  
+}
+.button2:hover{
+    box-shadow: 5px 5px 10px 0px rgb(33, 33, 53);
+    padding: 5px;  
+}
+
+
+/*################# HEADER STYLE ************************/
+.header{
+    position: sticky;
+    top: 0px;
+}
+
+/*########################### navbar styling ##################*/
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    width: 100%;
+    padding: 10px;
+    background: #FFFF;
+    opacity: 0.85; 
+    
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.nav-items{
+    order: 2;
+    display: flex;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+.navbar-container img{
+    order: 1;
+    width: 30%;
+}
+.navbar a{
+    color: #0d17ac;
+    text-decoration: none;
+    font-weight: 500;
+   
+}
+.navbar a:hover{
+    color: rgb(209, 178, 3);
+    
+}
+
+/* ################### SHOWCASE STYLING ################ */
+.showcase-wrapper{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 90px;
+}
+.showcase-item{
+    width: 50%;
+}
+.showcase-image img{
+    width: 400px;
+    height: 400px;
+}
+.showcase-form{
+    margin-bottom: 20px;
+}
+.showcase-form textarea{
+    margin: 10px;
+    width: 98%;
+    height: 110px;
+}
+.showcase-form textarea:hover{
+    border: 2px solid rgb(36, 144, 216);
+    width: 100%;
+    height: 110px;
+}
+
+/* ################ Trainer section style #########################*/
+.trainer-section{
+    
+    width: 100%;
+    padding: 45px;
+    background: rgb(153, 64, 64);
+    text-align: center;
+}
+.trainer-title{
+    padding-bottom: 20px;
+}
+.trainer-container{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background: rgb(245, 245, 245);
+    box-shadow: 0px 5px 10px 0px rgb(32, 30, 30); 
+}
+.trainer-image img{
+    width: 260px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+.trainer-name{
+    margin: 10px;
+    padding-bottom: 15px;
+}
+
+
+/* ####################### Team-srction styling ##############*/
+.team-section{
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: rgb(223, 238, 245);
+}
+.team-heading{
+    padding: 50px;
+}
+.team-container{
+    display: flex;
+    justify-content: space-between;
+}
+.team-menber{
+    background-color: #ffff;
+    border-radius: 20px;
+    width: 30%;
+    padding: 30px;
+    
+}
+.team-menber img{
+    width: 210px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 0px rgb(32, 30, 30); 
+    margin:15px;
+}
+.social-icon{
+    margin: 5px;
+}
+.team-menber a{
+    text-decoration: none;
+    padding: 0.6rem;
+}
+.email{
+    margin-top: 13px;
+}
+
+.team-reset{
+    margin-top: 20px;
+    text-align: end;
+    padding-right: 40px;
+    
+}
+
+.team-reset a{
+    text-decoration: none;
+    background-color:  rgb(74, 8, 128);
+    color: #FFF;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+
+/*############################## FOOTER STYLING ##########################*/
+.footer{
+    background-color: rgb(23,35,55);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.footer-content{
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+
+/* ####################   ABOUT PAGE STYLING ########################## */
+.about-section{
+    background-color: rgb(245, 245, 245);
+}
+.about-container{
+    width: 65%;
+    margin: auto;
+    padding: 20px;
+    line-height: 40px;
+}
+.about-container a{
+    text-decoration: none;
+}
+.about-container h1{
+    text-align: center;
+    padding: 10px;
+}
+.about-container h3{
+    text-align: center;
+    padding: 10px;
+}
+
+
