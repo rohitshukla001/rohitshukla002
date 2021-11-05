@@ -8,5 +8,7 @@ Werkzeug
 numpy
 scipy
 scikit-learn
+matplotlib
 pandas
 joblib
+nltk
